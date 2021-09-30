@@ -1,6 +1,6 @@
 # myweb
 
-script shell of termuc
+*script shell of termuc
 apt update 
 apt install git -y
 git clone https://github.com/htr-tech/termux-shell.git
