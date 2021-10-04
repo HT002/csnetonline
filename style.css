@@ -1,0 +1,371 @@
+* {
+
+  box-sizing: border-box;
+
+}
+
+body {
+
+  background-color: #fff3f5;
+
+  color: #ff748c;
+
+  float: left;
+
+  font-family: 'Nunito', sans-serif;
+
+  padding: 30px;
+
+}
+
+header {
+
+  text-align: center;
+
+  margin-bottom: 50px;
+
+}
+
+.help-text {
+
+  font-size: 80%;
+
+}
+
+.stage {
+
+  float: left;
+
+  padding: 15px;
+
+  width: 100%;
+
+}
+
+.step {
+
+  font-size: 20px;
+
+}
+
+.work-area {
+
+  display: inline-block;
+
+  float: left;
+
+  margin-top: -30px;
+
+  width: 35%;
+
+}
+
+.final-product {
+
+  border: 2px solid #fff;
+
+  display: inline-block;
+
+  float: left;
+
+  margin: 0 auto;
+
+  padding: 15px;
+
+  text-align: center;
+
+  width: 65%;
+
+}
+
+.option-container {
+
+  float: left;
+
+}
+
+.heart-message {
+
+  float: left;
+
+}
+
+.recipient {
+
+  float: left;
+
+}
+
+.color-option { 
+
+  cursor: pointer;
+
+  display: inline-block;
+
+  float: left;
+
+  height: 30px;
+
+  width: 30px;
+
+}
+
+input {
+
+  border: 2px solid #fff3f5;
+
+  font-size: 16px;
+
+  padding: 7px;
+
+  transition: border 240ms ease-in-out 10ms;
+
+}
+
+input:hover,
+
+input:focus {
+
+  border: 2px solid #da0331;
+
+  outline: none;
+
+}
+
+.short-input {
+
+  margin: 5px 0 10px;
+
+  max-width: 70px;
+
+}
+
+input.btn {
+
+  background-color: #fc2e5a;
+
+  border: 2px solid #da0331;
+
+  border-radius: 15px;
+
+  color: #fff;
+
+  cursor: pointer;
+
+  float: left;
+
+  padding: 10px 20px;
+
+  transition: background-color 240ms ease-in-out 10ms;
+
+  max-width: 100%;
+
+}
+
+input.btn:hover {
+
+  background-color: #da0331;
+
+}
+
+.pink-option {
+
+  background-color: #ffc0eb;
+
+}
+
+.orange-option{
+
+  background-color: #FFD5C0;
+
+}
+
+.yellow-option {
+
+  background-color: #FFF4C0;
+
+}
+
+.purple-option {
+
+  background-color: #D5C0FF;
+
+}
+
+.green-option {
+
+  background-color: #dfffd9;
+
+}
+
+.blue-option {
+
+  background-color: #C0EBFF;
+
+}
+
+/* Heart adapted from Michael Bellantoni
+
+https://codepen.io/stellina91/ */
+
+.heart {    
+
+  height: 200px;
+
+  margin: 50px auto 0;
+
+  position: relative;
+
+  width: 200px;
+
+}
+
+.heart:before,
+
+.heart:after {
+
+    position: absolute;
+
+    content: "";
+
+    left: 100px;
+
+    top: 0;
+
+    width: 100px;
+
+    height: 160px;
+
+    background-color: #fff;
+
+    -moz-border-radius: 50px 50px 0 0;
+
+    border-radius: 50px 50px 0 0;
+
+    -webkit-transform: rotate(-45deg);
+
+       -moz-transform: rotate(-45deg);
+
+        -ms-transform: rotate(-45deg);
+
+         -o-transform: rotate(-45deg);
+
+            transform: rotate(-45deg);
+
+    -webkit-transform-origin: 0 100%;
+
+       -moz-transform-origin: 0 100%;
+
+        -ms-transform-origin: 0 100%;
+
+         -o-transform-origin: 0 100%;
+
+            transform-origin: 0 100%;
+
+}
+
+.heart:after{
+
+    left: 0;
+
+    -webkit-transform: rotate(45deg);
+
+       -moz-transform: rotate(45deg);
+
+        -ms-transform: rotate(45deg);
+
+         -o-transform: rotate(45deg);
+
+            transform: rotate(45deg);
+
+    -webkit-transform-origin: 100% 100%;
+
+       -moz-transform-origin: 100% 100%;
+
+        -ms-transform-origin: 100% 100%;
+
+         -o-transform-origin: 100% 100%;
+
+            transform-origin :100% 100%;
+
+}
+
+.pink-heart.heart:before,
+
+.pink-heart.heart:after{
+
+  background-color: #ffc0eb;
+
+}
+
+.orange-heart.heart:before,
+
+.orange-heart.heart:after{
+
+  background-color: #FFD5C0;
+
+}
+
+.yellow-heart.heart:before,
+
+.yellow-heart.heart:after{
+
+  background-color: #FFF4C0;
+
+}
+
+.purple-heart.heart:before,
+
+.purple-heart.heart:after{
+
+  background-color: #D5C0FF;
+
+}
+
+.green-heart.heart:before,
+
+.green-heart.heart:after{
+
+  background-color: #dfffd9;
+
+}
+
+.blue-heart.heart:before,
+
+.blue-heart.heart:after{
+
+  background-color: #C0EBFF;
+
+}
+
+.heart-text {
+
+  color: #fc2e5a;
+
+  font-family: sans-serif;
+
+  font-size: 24px;
+
+  font-weight: 600;
+
+  left: 0;
+
+  letter-spacing: 4px;
+
+  position: absolute;
+
+  text-align: center;
+
+  top: 40px;
+
+  width: 200px;
+
+  z-index: 20;
+
+}
+
+.heart-text span {
+
+  display: block
+
+}
