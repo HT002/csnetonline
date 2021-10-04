@@ -1,44 +1,74 @@
-<!DOCTYPE html>
-
-<html>
-
-<head>
-
-    <meta name="viewport" content="width=device-width" />
-
-    <title>Index</title>
-
-    <link href="Styles/sweetalert.css" rel="stylesheet" />
-
-    <script src="Scripts/jquery-3.5.1.js"></script>
-
-    <script src="Scripts/sweetalert.min.js"></script>
-
-    <script>
-
-        $(document).ready(function () {
-
-            swal({
-
-                title: "Are you sure?",
-
-                text: "Your will not be able to recover this imaginary file!",
-
-                type: "warning",
-
-                showCancelButton: true,
-
-                confirmButtonClass: "btn-danger",
-
-                confirmButtonText: "Yes, delete it!",
-
-                closeOnConfirm: false
-
-            },
-
-                function () {
-
-                    swal("Deleted!", "Your imaginary file has been deleted.", "success");
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+<div class="container">
+  <header>
+    <h1>Send Your Heart!</h1>
+    <p>Customize a virtual sweetheart for your sweetheart.<br> Take a screengrab once you're finished and send to your sweetheart.</p>
+  </header>
+  
+  <div class="work-area">   
+      <div class="stage">
+        <p class="step">1 | Select the color of your heart</p>
+    
+        <div class="option-container">
+          <div class="color-option purple-option"></div>
+          <div class="color-option blue-option"></div>
+          <div class="color-option pink-option"></div>
+          <div class="color-option orange-option"></div>
+          <div class="color-option yellow-option"></div>
+          <div class="color-option green-option"></div>
+        </div>
+      </div>
+      
+      <div class="stage">    
+        <div class="heart-message">
+          <p class="step">2 | Customize the message for the heart
+            <br>
+            <em class="help-text">Max 5 characters each.</em> <br><small>Example: <strong>TRU LUV</strong></small>
+          </p>
+          <label>First line</label>
+          <br>
+          <input type="text" name="fline" class="short-input" id="fLine" maxlength="5" />
+          <br>
+          <label>Second line</label> <br>
+          <input class="short-input" type="text" name="sline" id="sLine" maxlength="5" />
+        </div>
+      </div>
+      
+      <div class="stage">  
+        <div class="recipient">
+          <p class="step">3 | Who is this for?</p>
+          <label>Their Name</label><br>
+          <input type="text" name="name" id="recipient" />
+        </div>
+      </div>
+    
+    <div class="stage">  
+        <div class="recipient">
+          <p class="step">4 | And what is your name?</p>
+          <label>Your Name</label><br>
+          <input type="text" name="name" id="giver" />
+        </div>
+      </div>
+  </div>
+  
+  <div class="final-product" id="finalValentines">
+    
+    <h2>Happy Valentine's Day, <br><span class="recipientValue"><em> Recipient's Name </em><span>!</h2>
+    
+    <div class="heart">
+      <div class="heart-text">
+        <span class="firstLine"></span>
+        <span class="secondLine"></span>     
+      </div>
+    </div>
+      
+      <h3>Love, <span class="giverValue">
+        <em>Your Name</em>
+          
+        </span></h3>
+  </div>
+</div>
 
                 });
 
