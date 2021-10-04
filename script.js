@@ -34,7 +34,7 @@ $(document).ready(function(){
     var recipient = $('#recipient').val();
     console.log(recipient);
     
-    $('.recipientValue').text(recipient + '!');
+    $('.recipientValue').text(recipient + '💝');
   })
   
   $("#giver").on("change keyup paste click", function(){
